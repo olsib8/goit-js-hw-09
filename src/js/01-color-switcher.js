@@ -7,7 +7,6 @@ let isActive = false;
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
-
 startBtn.addEventListener('click', () => {
   if (isActive) {
     return;
@@ -17,7 +16,6 @@ startBtn.addEventListener('click', () => {
     body.style.backgroundColor = `${getRandomHexColor()}`;
   }, 1000);
 });
-
 stopBtn.addEventListener('click', () => {
   isActive = false;
   clearInterval(timerId);
