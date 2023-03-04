@@ -17,3 +17,8 @@ startBtn.addEventListener('click', () => {
     body.style.backgroundColor = `${getRandomHexColor()}`;
   }, 1000);
 });
+
+stopBtn.addEventListener('click', () => {
+  isActive = false;
+  clearInterval(timerId);
+});
